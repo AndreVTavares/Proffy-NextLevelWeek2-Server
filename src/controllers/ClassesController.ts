@@ -80,7 +80,7 @@ export default class ClassesController {
         };
       });
 
-      await trx('schedule').insert(classSchedule);
+      await trx('class_schedule').insert(classSchedule);
 
       await trx.commit();
 
